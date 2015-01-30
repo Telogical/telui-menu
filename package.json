@@ -1,0 +1,29 @@
+{
+  "name": "@telogical/telui-menu",
+  "version": "1.0.0",
+  "description": "A menu built atop the telui famework",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Telogical/telui-menu.git"
+  },
+  "keywords": [
+    "menu",
+    "telui",
+    "angular",
+    "react",
+    "Telogical"
+  ],
+  "author": "jharlin@telogical.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Telogical/telui-menu/issues"
+  },
+  "dependencies": {
+    "@telogical/telui-radio": "1.x.x"
+  },
+  "homepage": "https://github.com/Telogical/telui-menu"
+}

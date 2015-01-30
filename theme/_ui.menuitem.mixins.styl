@@ -1,0 +1,43 @@
+_trannySpeed = $transitionSpeed;
+
+menuItem(){
+  transition: color _trannySpeed, border _trannySpeed, background _trannySpeed;
+}
+
+miDefault(ui-state,tolerance){
+  up = lighten(desaturate(ui-state, (tolerance * 0.7)), (tolerance* 0.3));
+  down = darken(saturate(ui-state, (tolerance * 0.8)), (tolerance* 0.2));
+  menuItem();
+  border-color: down; 
+}
+
+miHover(ui-state,tolerance){
+  up = lighten(desaturate(ui-state, (tolerance * 0.7)), (tolerance* 0.3));
+  down = darken(saturate(ui-state, (tolerance * 0.8)), (tolerance* 0.2));
+  menuItem();
+  legibleTextColor(up);
+  background: up; 
+  border-color: down; 
+}
+
+miActive(ui-state,tolerance){
+  up = lighten(desaturate(ui-state, (tolerance * 0.7)), (tolerance* 0.3));
+  down = darken(saturate(ui-state, (tolerance * 0.8)), (tolerance* 0.2));
+  menuItem();
+  legibleTextColor(down);
+  background: down;
+  border-color: down; 
+}
+
+miDisabled(ui-state,tolerance){
+  btnDefault(ui-state,tolerance);
+  opacity:0.5;
+  cursor: default;
+}
+
+iMenuItem = {
+  'default': miDefault,
+  'hover': miHover,
+  'active': miActive,
+  'disabled' : miDisabled   
+}
