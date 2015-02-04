@@ -1,6 +1,6 @@
 //think...shoudl this be an appearance of menuitem, yet a list of somethign else.
 
-var React = require('react/addons');
+require('@telogical/telui-radio');
 
 function Menu(ui) {
   'use strict';

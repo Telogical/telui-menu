@@ -1,7 +1,3 @@
-var React = require('react/addons');
-var _ = require('lodash');
-
-
 function AppearanceMenuitem(ui) {
   'use strict';
 
@@ -78,7 +74,7 @@ function AppearanceMenuitem(ui) {
       if (this.props.cssClass && this.props.cssClass.length) {
         appearanceClasses[this.props.cssClass] = true;
       }
-      
+
       //TODO: handle context, this, and control across components
       var btnAttrs = {
         id: key + '_menuitem',
