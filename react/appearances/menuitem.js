@@ -1,6 +1,9 @@
 function AppearanceMenuitem(ui) {
   'use strict';
-
+  
+  
+  console.log('ui', ui);
+  
   return React.createClass({
     displayName: 'Appearance.menuitem',
     mixins: [ui.Mixins.Appearance],
