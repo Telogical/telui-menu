@@ -1,10 +1,7 @@
-//global.UI = global.UI || require('@telogical/telui-core');
-require('@telogical/telui-core');
 
-console.log('global.UI', global.UI);
+var TelUI = require('@telogical/telui-core');
 
-global.UI.Appearances.menuitem = require('./appearances/menuitem')(global.UI);
-global.UI.Menu = require('./widgets/menu')(global.UI);
+TelUI.Appearances.menuitem = require('./appearances/menuitem')(TelUI);
+TelUI.Menu = require('./widgets/menu')(TelUI);
 
-
-module.exports = global.UI;
+module.exports = TelUI;

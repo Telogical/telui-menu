@@ -1,6 +1,5 @@
-
-
-var UI = require('../react/telui');
+var UI = require('../react/telui'),
+  React = UI.Core.React;
 
 angular
   .module('TelUI')
@@ -42,7 +41,7 @@ angular
 
         model.key = model.id;
 
-        window.React.renderComponent(UI.Menu(model), $el[0]);
+        React.renderComponent(UI.Menu(model), $el[0]);
       }
 
       scope.$watchCollection(

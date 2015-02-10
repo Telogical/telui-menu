@@ -1,9 +1,11 @@
-//think...shoudl this be an appearance of menuitem, yet a list of somethign else.
-
 require('@telogical/telui-radio');
 
 function Menu(ui) {
   'use strict';
+
+  var React = ui.Core.React,
+    _ = ui.Core._;
+
   return React.createClass({
     displayName: 'Menu',
     mixins: [ui.Mixins.Widget],

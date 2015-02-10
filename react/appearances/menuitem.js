@@ -1,8 +1,9 @@
 function AppearanceMenuitem(ui) {
   'use strict';
   
-  
-  console.log('ui', ui);
+  var React = ui.Core.React,
+    _ = ui.Core._;
+
   
   return React.createClass({
     displayName: 'Appearance.menuitem',
